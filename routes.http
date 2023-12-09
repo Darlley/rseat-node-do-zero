@@ -1,28 +1,28 @@
-GET http://localhost:3333/videos
+GET https://node-do-zero-0pkm.onrender.com/videos
 
 ###
 
-POST http://localhost:3333/videos
+POST https://node-do-zero-0pkm.onrender.com/videos
 Content-Type: application/json
 
 {
   "title": "angular",
   "description": "Utilizando Fastify e PostgreSQL",
-  "duration": 100
+  "url": "100"
 }
 
 
 ###
 
-PUT http://localhost:3333/videos/d9c882d9-374c-4fa6-bb72-d40581e87861
+PUT https://node-do-zero-0pkm.onrender.com/videos/d9c882d9-374c-4fa6-bb72-d40581e87861
 Content-Type: application/json
 
 {
   "title": "Como sair do ZERO em Node.js / 40%",
   "description": "Utilizando Fastify e PostgreSQL",
-  "duration": 100
+  "url": "https://youtu.be/fm4_EuCsQwg?list=PL45i6mPs-neipa8egi_pK92_1UaDb0PBC"
 } 
 
 ###
 
-DELETE http://localhost:3333/videos/d9c882d9-374c-4fa6-bb72-d40581e87861
+DELETE https://node-do-zero-0pkm.onrender.com/videos/d9c882d9-374c-4fa6-bb72-d40581e87861

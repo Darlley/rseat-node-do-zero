@@ -17,13 +17,13 @@ export class DatabasePostgres {
 
   async create(video){
     const video_id = crypto.randomUUID();
-    const {title, description, duration} = video
-    await sql`insert into videos (id, title, description, duration) VALUES (${video_id}, ${title}, ${description}, ${duration})`
+    const {title, description, url} = video
+    await sql`insert into videos (id, title, description, url) VALUES (${video_id}, ${title}, ${description}, ${url})`
   }
 
   async update(video_id, video){
-    const {title, description, duration} = video
-    await sql`update videos set title = ${title}, description = ${description}, duration = ${duration} where id = ${video_id}`
+    const {title, description, url} = video
+    await sql`update videos set title = ${title}, description = ${description}, url = ${url} where id = ${video_id}`
   }
 
   async delete(video_id){
