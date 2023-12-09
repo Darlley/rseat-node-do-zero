@@ -1,0 +1,28 @@
+GET http://localhost:3333/videos
+
+###
+
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+  "title": "angular",
+  "description": "Utilizando Fastify e PostgreSQL",
+  "duration": 100
+}
+
+
+###
+
+PUT http://localhost:3333/videos/d9c882d9-374c-4fa6-bb72-d40581e87861
+Content-Type: application/json
+
+{
+  "title": "Como sair do ZERO em Node.js / 40%",
+  "description": "Utilizando Fastify e PostgreSQL",
+  "duration": 100
+} 
+
+###
+
+DELETE http://localhost:3333/videos/d9c882d9-374c-4fa6-bb72-d40581e87861

@@ -1,0 +1,19 @@
+{
+  "name": "rseat-node-do-zero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "servers.js",
+  "type": "module",
+  "scripts": {
+    "node": "node server.js",
+    "server": "npm run node -- --watch --no-warnings "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "fastify": "^4.24.3",
+    "postgres": "^3.4.3"
+  }
+}
