@@ -6,9 +6,9 @@ POST https://node-do-zero-0pkm.onrender.com/videos
 Content-Type: application/json
 
 {
-  "title": "angular",
-  "description": "Utilizando Fastify e PostgreSQL",
-  "url": "100"
+  "title": "COMEÇANDO COM NODE.JS EM 2022 (Rocketseat)",
+  "description": "Primeiros passos com Node criando um CRUD com node:http, Express, extensão VSCode Rest Http, salvando dados in memory usando o node:fs",
+  "url": "https://youtu.be/fm4_EuCsQwg?list=PL45i6mPs-neipa8egi_pK92_1UaDb0PBC"
 }
 
 

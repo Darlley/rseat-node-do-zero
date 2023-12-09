@@ -15,12 +15,12 @@ server.get("/videos", async (request,reply) => {
 })
 
 server.post("/videos", async (request, reply) => {
-  const {title, description, duration} = request.body
+  const {title, description, url} = request.body
   
   await database.create({
     title, 
     description, 
-    duration,
+    url,
   })
 
   return reply.status(201).send()
