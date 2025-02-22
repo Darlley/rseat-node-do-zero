@@ -2,18 +2,30 @@
   "name": "rseat-node-do-zero",
   "version": "1.0.0",
   "description": "",
-  "main": "servers.js",
+  "main": "src/servers.ts",
   "type": "module",
   "scripts": {
-    "node": "node server.js",
-    "server": "npm run node -- --watch --no-warnings "
+    "node": "tsx watch  --env-file=.env src/server.ts",
+    "server": "npm run node -- --watch --no-warnings ",
+    "build": "tsup-node"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/cors": "^10.0.2",
+    "@fastify/swagger": "^9.4.2",
+    "@fastify/swagger-ui": "^5.2.2",
+    "fastify": "^5.2.1",
+    "fastify-type-provider-zod": "^4.0.2",
     "dotenv": "^16.3.1",
-    "fastify": "^4.24.3",
-    "postgres": "^3.4.3"
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.13.4",
+    "tsup": "^8.3.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
   }
 }
